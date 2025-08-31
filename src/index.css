@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-primary: "Montserrat", "sans-serif";
+  --font-secondary: "Nunito", "sans-serif";
+}
+
+.typing {
+  overflow: hidden;              /* hides the overflowing text */
+  white-space: nowrap;           /* keeps text on one line */
+  border-right: 4px solid white; /* cursor effect */
+  animation: typing 3s steps(25, end), blink 0.75s step-end infinite;
+}
+
+/* typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* blinking cursor */
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
