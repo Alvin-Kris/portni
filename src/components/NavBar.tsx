@@ -30,7 +30,7 @@ const Navbar = () => {
               smooth={true}
               className="cursor-pointer transition-colors duration-300 hover:text-blue-400"
             >
-              About
+              About Me
             </Link>
             <Link
               to="projects"
@@ -108,7 +108,7 @@ const Navbar = () => {
               smooth={true}
               className="block px-3 py-2 rounded-md transition-colors duration-300 hover:bg-gray-600 hover:text-blue-400"
             >
-              About
+              About Me
             </Link>
             <Link
               to="projects"

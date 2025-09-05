@@ -31,6 +31,9 @@ const ProfileSection = () => {
 
   return (
     <section id="about" className="py-12">
+      <h2 className="text-3xl font-bold mb-10 text-center hover:text-indigo-400 transition">
+        About Me
+      </h2>
       <div className="container mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left: Education */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group">
