@@ -7,22 +7,19 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ title, description, image, link }: ProjectCardProps) => {
   return (
-    <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+    <div
+      id="projects"
+      className="bg-white dark:bg-gray-800 shadow-md rounded-xl overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1"
+    >
       {/* Project Image */}
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-48 object-cover"
-      />
+      <img src={image} alt={title} className="w-full h-48 object-cover" />
 
       {/* Project Info */}
       <div className="p-5">
         <h3 className="text-xl font-bold hover:text-indigo-400 transition duration-300">
           {title}
         </h3>
-        <p className="text-gray-400 mt-2 mb-4">
-          {description}
-        </p>
+        <p className="text-gray-400 mt-2 mb-4">{description}</p>
         <a
           href={link}
           target="_blank"
