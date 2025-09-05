@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import ProjectCard from "./components/Projects";
+import ContactSection from "./components/Contact";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Hero />
         <EducationalBackground />
         <ProjectCard />
+        <ContactSection />
       </main>
       <Footer />
     </div>
