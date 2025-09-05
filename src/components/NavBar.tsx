@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import Logo from "./Logo";
 
 const Navbar = () => {
@@ -15,24 +16,38 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <a
-              href="#home"
-              className="transition-colors duration-300 hover:text-blue-400"
+            <Link
+              to="hero"
+              duration={300}
+              smooth={true}
+              className="cursor-pointer transition-colors duration-300 hover:text-blue-400"
             >
               Home
-            </a>
-            <a
-              href="#portfolio"
-              className="transition-colors duration-300 hover:text-blue-400"
+            </Link>
+            <Link
+              to="about"
+              duration={300}
+              smooth={true}
+              className="cursor-pointer transition-colors duration-300 hover:text-blue-400"
+            >
+              About
+            </Link>
+            <Link
+              to="projects"
+              duration={300}
+              smooth={true}
+              className="cursor-pointer transition-colors duration-300 hover:text-blue-400"
             >
               Portfolio
-            </a>
-            <a
-              href="#contact"
-              className="transition-colors duration-300 hover:text-blue-400"
+            </Link>
+            <Link
+              to="contact"
+              duration={300}
+              smooth={true}
+              className="cursor-pointer transition-colors duration-300 hover:text-blue-400"
             >
               Contacts
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -79,30 +94,38 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-700">
-            <a
-              href="#home"
+            <Link
+              to="hero"
+              duration={300}
+              smooth={true}
               className="block px-3 py-2 rounded-md transition-colors duration-300 hover:bg-gray-600 hover:text-blue-400"
             >
               Home
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              to="about"
+              duration={300}
+              smooth={true}
               className="block px-3 py-2 rounded-md transition-colors duration-300 hover:bg-gray-600 hover:text-blue-400"
             >
               About
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              to="projects"
+              duration={300}
+              smooth={true}
               className="block px-3 py-2 rounded-md transition-colors duration-300 hover:bg-gray-600 hover:text-blue-400"
             >
-              Services
-            </a>
-            <a
-              href="#contact"
+              Portfolio
+            </Link>
+            <Link
+              to="contacts"
+              duration={300}
+              smooth={true}
               className="block px-3 py-2 rounded-md transition-colors duration-300 hover:bg-gray-600 hover:text-blue-400"
             >
-              Contact
-            </a>
+              Contacts
+            </Link>
           </div>
         </div>
       )}

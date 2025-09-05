@@ -30,9 +30,8 @@ const ProfileSection = () => {
   };
 
   return (
-    <section className="py-12">
+    <section id="about" className="py-12">
       <div className="container mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
-        
         {/* Left: Education */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group">
           <h2 className="text-3xl font-bold mb-6 transition-colors  group-hover:text-indigo-400">
@@ -65,10 +64,12 @@ const ProfileSection = () => {
               <span className="font-semibold">📱 Phone:</span> {contact.phone}
             </p>
             <p>
-              <span className="font-semibold">📍 Location:</span> {contact.location}
+              <span className="font-semibold">📍 Location:</span>{" "}
+              {contact.location}
             </p>
             <p>
-              <span className="font-semibold">🔗 LinkedIn:</span> {contact.linkedin}
+              <span className="font-semibold">🔗 LinkedIn:</span>{" "}
+              {contact.linkedin}
             </p>
           </div>
 
