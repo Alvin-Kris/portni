@@ -10,20 +10,20 @@ const Projects = () => {
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
-            title="Portfolio Website"
-            description="A personal portfolio built with React and Tailwind CSS to showcase my projects and skills."
+            title="In-House Entrance Library Login System"
+            description="A secure login system designed for internal library management, allowing authorized personnel and students to access library resources efficiently."
             image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
             link="#"
           />
           <ProjectCard
-            title="School Management System"
-            description="A web app for managing classes, students, and grades efficiently."
+            title="In-House E-Library Login System for Free Printing and Computer Usage"
+            description="A secure login system for library users to access computers, e-resources, and free printing efficiently."
             image="https://images.unsplash.com/photo-1581090700227-4c4f50b1d1c8?auto=format&fit=crop&w=800&q=80"
             link="#"
           />
           <ProjectCard
-            title="E-Learning Platform"
-            description="An online platform that helps students and teachers connect for virtual learning."
+            title="Classroom Automation Monitoring and Management with Timetable"
+            description="A system that automates classroom monitoring and manages schedules, streamlining class activities and timetable management."
             image="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80"
             link="#"
           />

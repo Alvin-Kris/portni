@@ -1,4 +1,4 @@
-import heroImage from "../assets/Alvin.png";
+import heroImage from "../assets/alvin3.png";
 
 const Hero = () => {
   return (
@@ -6,7 +6,7 @@ const Hero = () => {
       id="hero"
       className="relative bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700 text-white px-6 flex items-center"
     >
-      <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-col lg:flex-row relative z-10 pt-20 md:pt-32 lg:pt-0 items-center">
+      <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-col lg:flex-row lg:gap-x-16 relative z-10 pt-20 md:pt-32 lg:pt-0 items-center">
         {/* Text Content */}
         <div className="md:w-1/2 flex flex-col justify-center items-center md:items-center lg:items-start text-center lg:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-extrabold mb-4 md:whitespace-nowrap">
