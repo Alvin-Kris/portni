@@ -36,9 +36,9 @@ const projects: Project[] = [
     description:
       "A system that automates classroom monitoring and manages schedules, streamlining class activities and timetable management.",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic consequatur doloribus? Quas eos, praesentium esse ducimus nostrum quo nam eveniet illo dicta excepturi nesciunt, hic recusandae veritatis dolor. Nesciunt!Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic consequatur doloribus? Quas eos, praesentium esse ducimus nostrum quo nam eveniet illo dicta excepturi nesciunt, hic recusandae veritatis dolor. Nesciunt!",
+      "This system is designed to automate classroom monitoring and timetable management for schools and universities. It streamlines class activities by reducing manual work and ensuring schedules are followed accurately. With real-time tracking, it enhances efficiency in managing both classrooms and schedules. The frontend is built with React and React Native, providing a smooth experience across web and mobile platforms. This allows administrators, teachers, and students to easily access the system from any device. The responsive design ensures that users can manage or check timetables conveniently on the go. On the backend, Firebase handles data storage, authentication, and real-time updates. This enables instant synchronization of schedules and monitoring data across all connected devices. By combining these technologies, the system delivers a reliable and modern solution for classroom automation and timetable management.",
     images: images.camm,
-    tech: ["JavaScript", "TypeScript", "HTML"],
+    tech: ["React", "React native", "TypeScript", "Firebase"],
   },
 ];
 
