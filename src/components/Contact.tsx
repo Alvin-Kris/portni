@@ -16,10 +16,10 @@ const ContactSection = () => {
 
     try {
       await emailjs.sendForm(
-        "service_t720dpass",
-        "template_1ayjq0dss",
+        "service_t720dpa",
+        "template_1ayjq0d",
         form.current,
-        { publicKey: "NXWbTlMUpG4EminyHss" }
+        { publicKey: "NXWbTlMUpG4EminyH" }
       );
       setStatus("success");
       form.current.reset();
