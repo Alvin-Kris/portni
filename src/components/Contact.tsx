@@ -2,7 +2,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
-const ContactSection: React.FC = () => {
+export const ContactSection: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"success" | "error" | null>(null);
