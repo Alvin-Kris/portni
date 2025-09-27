@@ -1,6 +1,8 @@
-// components/ContactSection.tsx
+"use client";
+
 import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -39,6 +41,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="bg-gray-600 py-16">
+      {/* Alerts */}
       <div className="fixed top-5 right-5 z-50 space-y-2 w-80">
         {status === "success" && (
           <div role="alert" className="alert alert-success shadow-lg">
@@ -77,6 +80,7 @@ const ContactSection = () => {
           </div>
         )}
       </div>
+
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-bold mb-5 text-center hover:text-indigo-400 transition">
           Get in Touch
@@ -88,102 +92,110 @@ const ContactSection = () => {
           message or a visit, connecting is just a click away.
         </p>
 
+        {/* Grid with cards */}
         <div className="container mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Left: Form Section */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+          {/* Form Card */}
+          <motion.div
+            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <h2 className="text-3xl font-bold mb-6">Have a Question?</h2>
 
-            <div className="w-full mt-5 sm:mt-8">
-              <form ref={form} onSubmit={sendEmail}>
-                <div className="mx-auto w-full sm:max-w-md md:max-w-lg flex flex-col gap-5">
-                  {/* Full Name */}
-                  <div className="mb-2">
-                    <label htmlFor="name" className="block text-sm font-medium">
-                      Full Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Your Full Name"
-                      className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
-                      required
-                    />
-                  </div>
-
-                  {/* Email Address */}
-                  <div className="mb-2">
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium"
-                    >
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Your email address"
-                      className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
-                      required
-                    />
-                  </div>
-
-                  {/* Company */}
-                  <div className="mb-2">
-                    <label
-                      htmlFor="company"
-                      className="block mb-2 text-sm font-medium"
-                    >
-                      Company (optional)
-                    </label>
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      placeholder="Company name"
-                      className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
-                    />
-                  </div>
-
-                  {/* Message */}
-                  <div className="mb-2">
-                    <label
-                      htmlFor="message"
-                      className="block mb-2 text-sm font-medium"
-                    >
-                      Leave us a message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      placeholder="Write your message here..."
-                      className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
-                      required
-                    />
-                  </div>
-
-                  <div className="flex flex-col md:flex-row gap-2 md:gap-4 justify-center items-center">
-                    <button
-                      type="submit"
-                      className="btn btn-active btn-primary btn-block max-w-[200px]"
-                      disabled={loading}
-                    >
-                      {loading ? (
-                        <span className="loading loading-spinner"></span>
-                      ) : (
-                        "Send Message"
-                      )}
-                    </button>
-                  </div>
+            <form ref={form} onSubmit={sendEmail}>
+              <div className="flex flex-col gap-5">
+                {/* Full Name */}
+                <div className="mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Full Name"
+                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
+                    required
+                  />
                 </div>
-              </form>
-            </div>
-          </div>
 
-          {/* Right: Location Section */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+                {/* Email Address */}
+                <div className="mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your email address"
+                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
+                    required
+                  />
+                </div>
+
+                {/* Company */}
+                <div className="mb-2">
+                  <label
+                    htmlFor="company"
+                    className="block mb-2 text-sm font-medium"
+                  >
+                    Company (optional)
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Company name"
+                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
+                  />
+                </div>
+
+                {/* Message */}
+                <div className="mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block mb-2 text-sm font-medium"
+                  >
+                    Leave us a message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={4}
+                    placeholder="Write your message here..."
+                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
+                    required
+                  />
+                </div>
+
+                <div className="flex justify-center">
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn-block max-w-[200px]"
+                    disabled={loading}
+                  >
+                    {loading ? (
+                      <span className="loading loading-spinner"></span>
+                    ) : (
+                      "Send Message"
+                    )}
+                  </button>
+                </div>
+              </div>
+            </form>
+          </motion.div>
+
+          {/* Location Card */}
+          <motion.div
+            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <h2 className="text-3xl font-bold mb-6">Location</h2>
             <div className="w-full mt-5 sm:mt-8">
               <iframe
@@ -197,7 +209,7 @@ const ContactSection = () => {
                 className="rounded-xl shadow-lg"
               ></iframe>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
-// components/ProfileSection.jsx
+import { motion } from "framer-motion";
+
 const ProfileSection = () => {
   const education = [
     {
@@ -38,7 +39,13 @@ const ProfileSection = () => {
       </h2>
       <div className="container mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left: Education */}
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group">
+        <motion.div
+          className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <h2 className="text-3xl font-bold mb-6 transition-colors group-hover:text-indigo-400">
             Educational Background
           </h2>
@@ -48,18 +55,26 @@ const ProfileSection = () => {
                 <h3 className="text-xl font-semibold">{edu.school}</h3>
                 <p className="text-gray-600 dark:text-gray-300">{edu.degree}</p>
                 <span className="text-sm text-gray-500">{edu.year}</span>
-                <p className="mt-2 text-gray-700 dark:text-gray-400">
-                  {edu.details}
-                </p>
+                {edu.details && (
+                  <p className="mt-2 text-gray-700 dark:text-gray-400">
+                    {edu.details}
+                  </p>
+                )}
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Right: Contact & Work Experience */}
         <div className="flex flex-col gap-8">
           {/* Contact */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group">
+          <motion.div
+            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <h2 className="text-3xl font-bold mb-6 transition-colors group-hover:text-indigo-400">
               Contact & Information
             </h2>
@@ -79,10 +94,16 @@ const ProfileSection = () => {
                 {contact.linkedin}
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Work Experience */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group">
+          <motion.div
+            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <h2 className="text-3xl font-bold mb-6 transition-colors group-hover:text-indigo-400">
               Work Experience
             </h2>
@@ -94,7 +115,7 @@ const ProfileSection = () => {
               <li>1 year production operator (Cebu Mitsumi Incorporated)</li>
               <li>Dean’s Lister & Academic Distinction recipient</li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

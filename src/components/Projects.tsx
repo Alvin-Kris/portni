@@ -1,5 +1,5 @@
-"use client";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { images } from "../assets/Images";
 
@@ -50,7 +50,7 @@ const Projects = () => {
     setActiveProject(project);
     setCurrent(0);
     const modal = document.getElementById("project_modal") as HTMLDialogElement;
-    modal.showModal();
+    modal?.showModal();
   };
 
   return (
@@ -62,13 +62,27 @@ const Projects = () => {
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <ProjectCard
+            <motion.div
               key={index}
-              title={project.title}
-              description={project.description}
-              image={project.images[0]}
-              onClick={() => openModal(project)}
-            />
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 0.6,
+                  delay: index * 0.12, // stagger by index
+                  ease: "easeOut",
+                },
+              }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                image={project.images[0]}
+                onClick={() => openModal(project)}
+              />
+            </motion.div>
           ))}
         </div>
       </div>
