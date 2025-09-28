@@ -2,8 +2,8 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10 font-primary">
-      <nav className="grid grid-flow-col gap-4">
+    <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10 font-primary bg-gray-900">
+      <nav className="grid grid-flow-col gap-4 text-white">
         <a
           href="https://web.facebook.com/ctudanaoofficial"
           target="_blank"
@@ -33,7 +33,7 @@ const Footer = () => {
       </nav>
 
       <nav>
-        <div className="grid grid-flow-col gap-4 text-gray-700 dark:text-gray-300">
+        <div className="grid grid-flow-col gap-4 text-gray-300">
           {/* Facebook */}
           <a
             href="https://www.facebook.com/yourprofile"
@@ -49,7 +49,7 @@ const Footer = () => {
             href="https://github.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-900 dark:hover:text-white transition-colors"
+            className="hover:text-white transition-colors"
           >
             <FaGithub size={24} />
           </a>
@@ -67,7 +67,7 @@ const Footer = () => {
       </nav>
 
       <aside>
-        <p>
+        <p className="text-white">
           Copyright © {new Date().getFullYear()} - All right reserved by Alvin
           Hermosilla
         </p>

@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="flex flex-col min-h-screen font-primary">
       <NavBar />
-      <main className="flex-grow dark:bg-gray-900">
+      <main className="flex-grow bg-gray-900">
         <Hero />
         <EducationalBackground />
         <ProjectCard />

@@ -56,7 +56,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-16 my-10">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-10 text-center hover:text-indigo-400 transition">
+        <h2 className="text-3xl font-bold mb-10 text-center hover:text-indigo-400 transition text-white">
           Recent Projects
         </h2>
 

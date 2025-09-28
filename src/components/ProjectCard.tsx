@@ -18,7 +18,7 @@ const ProjectCard = ({
 
       {/* Project Info */}
       <div className="p-5">
-        <h3 className="text-xl font-bold hover:text-indigo-400 transition duration-300">
+        <h3 className="text-xl font-bold hover:text-indigo-400 transition duration-300 text-white">
           {title}
         </h3>
         <p className="text-gray-400 mt-2 mb-4">{description}</p>

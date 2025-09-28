@@ -82,7 +82,7 @@ const ContactSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-5 text-center hover:text-indigo-400 transition">
+        <h2 className="text-3xl font-bold mb-5 text-center hover:text-indigo-400 transition text-white">
           Get in Touch
         </h2>
         <p className="text-gray-300 text-center mb-10">
@@ -102,13 +102,18 @@ const ContactSection = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <h2 className="text-3xl font-bold mb-6">Have a Question?</h2>
+            <h2 className="text-3xl font-bold mb-6 text-white">
+              Have a Question?
+            </h2>
 
             <form ref={form} onSubmit={sendEmail}>
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-5 ">
                 {/* Full Name */}
-                <div className="mb-2">
-                  <label htmlFor="name" className="block text-sm font-medium">
+                <div className="mb-2 ">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-white"
+                  >
                     Full Name
                   </label>
                   <input
@@ -116,14 +121,17 @@ const ContactSection = () => {
                     id="name"
                     name="name"
                     placeholder="Your Full Name"
-                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
+                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none placeholder:text-gray-300"
                     required
                   />
                 </div>
 
                 {/* Email Address */}
                 <div className="mb-2">
-                  <label htmlFor="email" className="block text-sm font-medium">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-white"
+                  >
                     Email Address
                   </label>
                   <input
@@ -131,7 +139,7 @@ const ContactSection = () => {
                     id="email"
                     name="email"
                     placeholder="Your email address"
-                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
+                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none placeholder:text-gray-300"
                     required
                   />
                 </div>
@@ -140,7 +148,7 @@ const ContactSection = () => {
                 <div className="mb-2">
                   <label
                     htmlFor="company"
-                    className="block mb-2 text-sm font-medium"
+                    className="block mb-2 text-sm font-medium text-white"
                   >
                     Company (optional)
                   </label>
@@ -149,7 +157,7 @@ const ContactSection = () => {
                     id="company"
                     name="company"
                     placeholder="Company name"
-                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
+                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none placeholder:text-gray-300"
                   />
                 </div>
 
@@ -157,7 +165,7 @@ const ContactSection = () => {
                 <div className="mb-2">
                   <label
                     htmlFor="message"
-                    className="block mb-2 text-sm font-medium"
+                    className="block mb-2 text-sm font-medium text-white"
                   >
                     Leave us a message
                   </label>
@@ -166,7 +174,7 @@ const ContactSection = () => {
                     name="message"
                     rows={4}
                     placeholder="Write your message here..."
-                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
+                    className="w-full rounded-md border border-gray-300 p-3 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none placeholder:text-gray-300"
                     required
                   />
                 </div>
@@ -196,7 +204,7 @@ const ContactSection = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <h2 className="text-3xl font-bold mb-6">Location</h2>
+            <h2 className="text-3xl font-bold mb-6 text-white">Location</h2>
             <div className="w-full mt-5 sm:mt-8">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.7444698251263!2d124.02903823850872!3d10.502408263652235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9bb7c8c2b3c4f%3A0xedcede8412e50fd8!2sCTU%20Danao%20Campus%20Admin%20Building!5e0!3m2!1sen!2sph!4v1757084850264!5m2!1sen!2sph"

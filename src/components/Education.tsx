@@ -34,7 +34,7 @@ const ProfileSection = () => {
 
   return (
     <section id="about" className="py-12">
-      <h2 className="text-3xl font-bold mb-10 text-center hover:text-indigo-400 transition">
+      <h2 className="text-3xl font-bold mb-10 text-center hover:text-indigo-400 transition text-white">
         About Me
       </h2>
       <div className="container mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -46,17 +46,21 @@ const ProfileSection = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h2 className="text-3xl font-bold mb-6 transition-colors group-hover:text-indigo-400">
+          <h2 className="text-white text-3xl font-bold mb-6 transition-colors group-hover:text-indigo-400">
             Educational Background
           </h2>
           <div className="space-y-6 border-l-4 border-blue-600 pl-6">
             {education.map((edu, index) => (
               <div key={index}>
-                <h3 className="text-xl font-semibold">{edu.school}</h3>
-                <p className="text-gray-300">{edu.degree}</p>
+                <h3 className="text-white text-xl font-semibold">
+                  {edu.school}
+                </h3>
+                <p className="text-gray-300 ">{edu.degree}</p>
                 <span className="text-sm text-gray-500">{edu.year}</span>
                 {edu.details && (
-                  <p className="mt-2 text-gray-400">{edu.details}</p>
+                  <p className="mt-2 text-gray-700 dark:text-gray-400">
+                    {edu.details}
+                  </p>
                 )}
               </div>
             ))}
@@ -73,10 +77,10 @@ const ProfileSection = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <h2 className="text-3xl font-bold mb-6 transition-colors group-hover:text-indigo-400">
+            <h2 className="text-white text-3xl font-bold mb-6 transition-colors group-hover:text-indigo-400">
               Contact & Information
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 text-white">
               <p>
                 <span className="font-semibold">📧 Email:</span> {contact.email}
               </p>
@@ -102,10 +106,10 @@ const ProfileSection = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <h2 className="text-3xl font-bold mb-6 transition-colors group-hover:text-indigo-400">
+            <h2 className="text-white text-3xl font-bold mb-6 transition-colors group-hover:text-indigo-400">
               Work Experience
             </h2>
-            <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+            <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>
                 4 years part-time instructor (Cebu Technological
                 University-Danao Campus)
