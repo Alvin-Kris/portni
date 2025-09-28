@@ -89,7 +89,7 @@ const Projects = () => {
 
       {/* Modal */}
       <dialog id="project_modal" className="modal">
-        <div className="modal-box relative max-w-4xl w-full p-0 bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-2xl max-h-screen overflow-y-auto">
+        <div className="modal-box relative max-w-4xl w-full p-0 bg-gray-900 rounded-2xl overflow-hidden shadow-2xl max-h-screen overflow-y-auto">
           <form method="dialog" className="absolute right-2 top-2 z-50">
             <button className="w-8 h-8 flex items-center justify-center rounded-full bg-black/60 text-white shadow-lg hover:bg-black/80 transition">
               ✕

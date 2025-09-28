@@ -12,7 +12,7 @@ const ProjectCard = ({
   onClick,
 }: ProjectCardProps) => {
   return (
-    <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+    <div className="bg-gray-800 shadow-md rounded-xl overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
       {/* Project Image */}
       <img src={image} alt={title} className="w-full h-48 object-cover" />
 

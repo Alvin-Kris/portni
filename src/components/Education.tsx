@@ -40,7 +40,7 @@ const ProfileSection = () => {
       <div className="container mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left: Education */}
         <motion.div
-          className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group"
+          className="bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -53,12 +53,10 @@ const ProfileSection = () => {
             {education.map((edu, index) => (
               <div key={index}>
                 <h3 className="text-xl font-semibold">{edu.school}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{edu.degree}</p>
+                <p className="text-gray-300">{edu.degree}</p>
                 <span className="text-sm text-gray-500">{edu.year}</span>
                 {edu.details && (
-                  <p className="mt-2 text-gray-700 dark:text-gray-400">
-                    {edu.details}
-                  </p>
+                  <p className="mt-2 text-gray-400">{edu.details}</p>
                 )}
               </div>
             ))}
@@ -69,7 +67,7 @@ const ProfileSection = () => {
         <div className="flex flex-col gap-8">
           {/* Contact */}
           <motion.div
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group"
+            className="bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -98,7 +96,7 @@ const ProfileSection = () => {
 
           {/* Work Experience */}
           <motion.div
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group"
+            className="bg-gray-800 rounded-xl shadow-lg p-8 transition transform hover:-translate-y-1 hover:shadow-2xl group"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}

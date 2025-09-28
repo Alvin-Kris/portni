@@ -96,7 +96,7 @@ const ContactSection = () => {
         <div className="container mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Form Card */}
           <motion.div
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8"
+            className="bg-gray-800 rounded-xl shadow-lg p-8"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -190,7 +190,7 @@ const ContactSection = () => {
 
           {/* Location Card */}
           <motion.div
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8"
+            className="bg-gray-800 rounded-xl shadow-lg p-8"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
