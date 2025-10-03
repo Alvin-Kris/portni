@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="grid grid-flow-col gap-4 text-gray-300">
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/yourprofile"
+            href="https://web.facebook.com/kriis.beduya"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition-colors"
