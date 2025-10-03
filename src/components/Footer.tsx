@@ -14,21 +14,21 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://www.yourwebsite.com/jobs"
+          href="https://www.facebook.com/share/1SZXyz83uX/"
           target="_blank"
           rel="noopener noreferrer"
           className="link link-hover hover:text-indigo-400"
         >
-          Jobs
+          Company
         </a>
 
         <a
-          href="https://www.yourwebsite.com/presskit"
+          href="https://www.facebook.com/profile.php?id=61560507485444"
           target="_blank"
           rel="noopener noreferrer"
           className="link link-hover hover:text-indigo-400"
         >
-          Press kit
+          Department
         </a>
       </nav>
 
@@ -46,7 +46,7 @@ const Footer = () => {
 
           {/* GitHub */}
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/kriis23"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -56,7 +56,7 @@ const Footer = () => {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/kriis-beduya-39a1a9207/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition-colors"
