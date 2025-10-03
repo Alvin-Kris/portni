@@ -18,10 +18,10 @@ const ProjectCard = ({
 
       {/* Project Info */}
       <div className="p-5">
-        <h3 className="text-xl font-bold hover:text-indigo-400 transition duration-300 text-white">
+        <h3 className="text-xl font-bold hover:text-indigo-400 transition duration-300 text-white line-clamp-2">
           {title}
         </h3>
-        <p className="text-gray-400 mt-2 mb-4">{description}</p>
+        <p className="text-gray-400 mt-2 mb-4 line-clamp-3">{description}</p>
         <button
           onClick={onClick}
           className="inline-block px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition duration-300"
