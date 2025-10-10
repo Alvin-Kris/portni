@@ -29,7 +29,7 @@ const ProfileSection = () => {
     email: "kriisbeduya@gmail.com",
     phone: "+63 927 735 8462",
     location: "Danao City, Philippines",
-    linkedin: "linkedin.com/in/yourprofile",
+    linkedin: "linkedin.com/in/kriis-beduya-39a1a9207/",
   };
 
   return (

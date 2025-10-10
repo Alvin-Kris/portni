@@ -207,7 +207,7 @@ const ContactSection = () => {
             <h2 className="text-3xl font-bold mb-6 text-white">Location</h2>
             <div className="w-full mt-5 sm:mt-8">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.7444698251263!2d124.02903823850872!3d10.502408263652235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9bb7c8c2b3c4f%3A0xedcede8412e50fd8!2sCTU%20Danao%20Campus%20Admin%20Building!5e0!3m2!1sen!2sph!4v1757084850264!5m2!1sen!2sph"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3923.0269445971453!2d124.02261699999998!3d10.498541999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDI5JzU0LjgiTiAxMjTCsDAxJzIxLjQiRQ!5e0!3m2!1sen!2sph!4v1760110291518!5m2!1sen!2sph"
                 width="100%"
                 height="500"
                 style={{ border: 0 }}
