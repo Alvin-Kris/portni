@@ -6,22 +6,22 @@ const ProfileSection = () => {
       school: "Cebu Institute of Technology University",
       degree: "Master in Information Technology",
       year: "2018 – 2022",
-      details: "– 9 units earned",
+      details: "Ongoing (9 units earned)",
     },
     {
       school: "Northeastern Cebu College",
       degree: "Bachelor of Science in Information Technology",
-      year: "2016 – 2018",
+      year: "2011 – 2018",
     },
     {
       school: "Maslog National High School",
       degree: "Secondary Education",
-      year: "2006 – 2012",
+      year: "2007 – 2011",
     },
     {
       school: "Bibiana Mercado Elementary School",
       degree: "Elementary Education",
-      year: "2006 – 2012",
+      year: "2001 – 2007",
     },
   ];
 
@@ -58,7 +58,7 @@ const ProfileSection = () => {
                 <p className="text-gray-300 ">{edu.degree}</p>
                 <span className="text-sm text-gray-500">{edu.year}</span>
                 {edu.details && (
-                  <p className="mt-2 text-gray-700 dark:text-gray-400">
+                  <p className="text-gray-700 dark:text-gray-400">
                     {edu.details}
                   </p>
                 )}
@@ -111,11 +111,17 @@ const ProfileSection = () => {
             </h2>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>
-                4 years part-time instructor (Cebu Technological
-                University-Danao Campus)
+                Present Instructor 1 (Cebu Technological University–Consolacion
+                Campus)
               </li>
-              <li>1 year production operator (Cebu Mitsumi Incorporated)</li>
-              <li>Dean’s Lister & Academic Distinction recipient</li>
+              <li>
+                4 years Part-time Instructor (Cebu Technological
+                University–Danao Campus)
+              </li>
+              <li>
+                7 years Library Electronic Information In-Charge (Cebu
+                Technological University–Danao Campus)
+              </li>
             </ul>
           </motion.div>
         </div>
