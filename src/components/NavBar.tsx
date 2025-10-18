@@ -28,6 +28,7 @@ const Navbar = () => {
               to="about"
               duration={300}
               smooth={true}
+              offset={-15}
               className="cursor-pointer transition-colors duration-300 hover:text-blue-400"
             >
               About Me
